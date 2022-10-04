@@ -27,7 +27,7 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return email.equals(user.email);
+        return Objects.equals(email, user.email);
     }
 
     @Override
