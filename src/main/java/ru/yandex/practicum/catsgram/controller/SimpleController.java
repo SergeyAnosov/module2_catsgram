@@ -13,7 +13,8 @@ public class SimpleController {
 
     @GetMapping("/home")
     public String homePage() {
-        log.info("Получен запрос.");
+        log.info("Получен запрос GET /home.");
         return "Котограм";
     }
+    
 }
